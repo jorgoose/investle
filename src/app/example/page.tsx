@@ -92,7 +92,7 @@ export default function Component() {
 }
 
 // TypeScript type for the props
-export interface ComponentProps {
+type ComponentProps = {
   className?: string
 }
 
