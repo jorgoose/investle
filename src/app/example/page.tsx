@@ -98,7 +98,7 @@ type ComponentProps = {
 }
 
 // DO NOT implicity use `any` type
-function CurvedlineChart({ className, ...props }: ComponentProps) {
+function CurvedlineChart({ ...props }: ComponentProps) {
   return (
     <div {...props}>
       <ResponsiveLine
