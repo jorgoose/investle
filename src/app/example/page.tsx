@@ -91,12 +91,14 @@ export default function Component() {
   )
 }
 
-// TypeScript type for the props
+// Not any type, use specific type
 type ComponentProps = {
-  className?: string
+  className: string;
+  [key: string]: any;
 }
 
-function CurvedlineChart(props: ComponentProps) {
+// DO NOT implicity use `any` type
+function CurvedlineChart({ className, ...props }: ComponentProps) {
   return (
     <div {...props}>
       <ResponsiveLine
